@@ -1,0 +1,31 @@
+<view class="list-section">
+  <view class="list-item">
+    <view class="left">
+      <image class="cph-icon" src="/icons/zzwg/cph.png" mode="widthFix"/>
+      <view class="cph-text">苏A-12231</view>
+    </view>
+    <view class="right">
+      <view class="right-row">
+        <image class="row-icon" src="/icons/zzwg/name.png" />
+        <view class="row-name">车主姓名：</view>
+        <view class="row-value">李小璐</view>
+      </view>
+      <view class="right-row">
+        <image class="row-icon" src="/icons/zzwg/car.png" />
+        <view class="row-name">车辆型号：</view>
+        <view class="row-value">重型厢式货车</view>
+
+        \                                                 
+      </view>
+      <view class="right-row">
+        <image class="row-icon" src="/icons/zzwg/ph.png" />
+        <view class="row-name">联系方式：</view>
+        <view class="row-value">16623146321</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<navigator url="../zdcl-add/zdcl-add">
+  <image class="add-icon" src="/icons/add.png" />
+</navigator>

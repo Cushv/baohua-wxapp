@@ -1,0 +1,42 @@
+<swiper current="{{0}}" class="swiper-tab" display-multiple-items="3" duration="300">
+  <swiper-item>
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" catchtap="switchNav">治安事件</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" catchtap="switchNav">物流企业</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" catchtap="switchNav">重点企业</view>
+  </swiper-item>
+</swiper>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+  <swiper-item>
+    <scroll-view class="list-section" scroll-y='true'>
+      <view class="non-data-section">
+        <image class='non-data-icon' src="/icons/load_fail.png" />
+        <view class="non-data-text">没有数据哎...</view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view class="list-section">
+      <view class="non-data-section">
+        <image class='non-data-icon' src="/icons/load_fail.png" />
+        <view class="non-data-text">没有数据哎...</view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view class="list-section">
+      <view class="non-data-section">
+        <image class='non-data-icon' src="/icons/load_fail.png" />
+        <view class="non-data-text">没有数据哎...</view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+
+<navigator url="../add/add">
+  <image class="report-problem-icon" src="/icons/add.png" />
+</navigator>
