@@ -13,12 +13,12 @@
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
  <!-- 已上报主题内容 -->
     <swiper-item>
-      <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;" >
+      <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;"  enable-flex="ture">
         <!-- <view>测试</view> -->
         <view class="list-section">  
-          <block wx:for="{{list}}" wx:key="{{item.id}}">
-            <navigator class="list-item" url="../wtxq/wtxq?id={{item.id}}"> 
-              <view class="list-item" data-id="{{item.id}}" bindtap="activityDetail">
+          <block wx:for="{{list}}" wx:key="id">
+            <navigator class="list-item" url="../wtxq/wtxq?id=id"> 
+              <view class="list-item" data-id="id" bindtap="activityDetail">
                 <view class="item-row">
                   <view class="row-name">{{item.people}}</view>
                 </view>
@@ -47,19 +47,19 @@
               </navigator>
             </block>
             <view wx:if="{{list.length == 0}}" class="non-data-section">
+              <view class="non-data-text">没有找到数据哎...</view>
               <image class='non-data-icon' src="../../../icons/load_fail.png" />
-              <view class="non-data-text">没有数据哎...</view>
             </view>
         </view>     
       </scroll-view>
     </swiper-item>
 <!-- 待处理主体内容 -->
     <swiper-item>
-      <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;">
+      <scroll-view class="list-section"  scroll-y="true" style="height: 1280rpx;" enable-flex="ture">
         <!-- <view>处理</view> -->
         <view class="list-section">  
-          <block wx:for="{{list1}}" wx:key="{{item.id}}">
-            <view class="list-item" data-id="{{item.id}}" bindtap="activityDetail">
+          <block wx:for="{{list1}}" wx:key="id">
+            <view class="list-item" data-id="id" bindtap="activityDetail">
                 <view class="item-row">
                   <view class="row-name">{{item.people}}</view>
                 </view>
@@ -86,20 +86,20 @@
                 <view class="container"> <!-- 分割线 --> <view class="divLine"></view></view>
               </view>
           </block>
-          <view wx:if="{{list.length == 0}}" class="non-data-section">
+          <view wx:if="{{list1.length == 0}}" class="non-data-section">
+            <view class="non-data-text">没有找到数据哎...</view>
             <image class='non-data-icon' src="../../../icons/load_fail.png" />
-            <view class="non-data-text">没有数据哎...</view>
           </view>
         </view>     
       </scroll-view>
     </swiper-item>
 <!-- 已完成主体内容 -->
   <swiper-item>
-    <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;">
+    <scroll-view class="list-section"  scroll-y="true" style="height: 1280rpx;" enable-flex="ture">
       <!-- <view>完成</view> -->
       <view class="list-section">  
-        <block wx:for="{{list2}}" wx:key="{{item.id}}">
-           <view class="list-item" data-id="{{item.id}}" bindtap="activityDetail">
+        <block wx:for="{{list2}}" wx:key="id">
+           <view class="list-item" data-id="id" bindtap="activityDetail">
               <view class="item-row">
                 <view class="row-name">{{item.people}}</view>
               </view>
@@ -126,10 +126,10 @@
               <view class="container"> <!-- 分割线 --> <view class="divLine"></view></view>
             </view>
          </block>
-         <view wx:if="{{list.length == 0}}" class="non-data-section">
-           <image class='non-data-icon' src="../../../icons/load_fail.png" />
-           <view class="non-data-text">没有数据哎...</view>
-         </view>
+         <view wx:if="{{list2.length == 0}}" class="non-data-section">
+            <view class="non-data-text">没有找到数据哎...</view>
+            <image class='non-data-icon' src="../../../icons/load_fail.png" />
+          </view>
       </view>     
     </scroll-view>
   </swiper-item>

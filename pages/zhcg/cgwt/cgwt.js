@@ -36,7 +36,7 @@ Page({
         fail: res => {
           console.log(res)
         }
-    });
+      })
     wx.request({
       url: app.globalData.domain + 'getStatepaifarenList',
       method: 'post',
@@ -48,8 +48,8 @@ Page({
 
       },
       success: res => {
-        // console.log("待处理数据")
-        // console.log(res.data)
+        console.log("待处理数据")
+        console.log(res.data)
         this.setData({
           list1: this.list1 = res.data.cgshangbaoList
         })
@@ -68,8 +68,8 @@ Page({
         "yhzh": "宝华镇"
       },
       success: res => {
-        // console.log("已完成数据")
-        // console.log(res.data)
+        console.log("已完成数据")
+        console.log(res.data)
         this.setData({
           list2: this.list2 = res.data.cgshangbaoList
         })

@@ -16,9 +16,9 @@
       <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;" >
         <!-- <view>测试</view> -->
         <view class="list-section">  
-          <block wx:for="{{list}}" wx:key="{{item.id}}">
-            <navigator class="list-item" url="../cjxq/cjxq?id={{item.id}}"> 
-              <view class="list-item" data-id="{{item.id}}" bindtap="activityDetail">
+          <block wx:for="{{list}}" wx:key="id">
+            <navigator class="list-item" url="../cjxq/cjxq?id=id"> 
+              <view class="list-item" data-id="id" bindtap="activityDetail">
                 <view class="item-row">
                   <view class="row-name">{{item.shangbaoren}}</view>
                 </view>
@@ -58,8 +58,8 @@
       <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;">
         <!-- <view>处理</view> -->
         <view class="list-section">  
-          <block wx:for="{{list1}}" wx:key="{{item.id}}">
-            <view class="list-item" data-id="{{item.id}}" bindtap="activityDetail">
+          <block wx:for="{{list1}}" wx:key="id">
+            <view class="list-item" data-id="id" bindtap="activityDetail">
                 <view class="item-row">
                   <view class="row-name">{{item.shangbaoren}}</view>
                 </view>
@@ -98,8 +98,8 @@
     <scroll-view class="list-section" scroll-y="true" style="height: 1280rpx;">
       <!-- <view>完成</view> -->
       <view class="list-section">  
-        <block wx:for="{{list2}}" wx:key="{{item.id}}">
-           <view class="list-item" data-id="{{item.id}}" bindtap="activityDetail">
+        <block wx:for="{{list2}}" wx:key="id">
+           <view class="list-item" data-id="id" bindtap="activityDetail">
               <view class="item-row">
                 <view class="row-name">{{item.shangbaoren}}</view>
               </view>

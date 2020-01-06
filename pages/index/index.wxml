@@ -64,9 +64,9 @@
 <view class="inform-container">
   <image class="inform-image" src="../../icons/index/img_dt.png" mode="scaleToFill" />
   <view class="inform-section">
-
-    <block wx:for="{{newsInfList}}" wx:key="{{item.id}}">
-      <navigator class="inform-item" url='/pages/ggxq/ggxq?id={{item.id}}'>
+  
+    <block wx:for="{{newsInfList}}" wx:key="id">
+      <navigator class="inform-item" url='/pages/ggxq/ggxq?id=id'>
         <view class="inform-item-left">
           <view class="inform-item-left-top">{{item.title}}</view>
           <view class="inform-item-left-bottom">

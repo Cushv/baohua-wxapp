@@ -12,8 +12,9 @@
 		"coverView": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
-		"checkSiteMap": true,
+		"checkSiteMap": false,
 		"uploadWithSourceMap": true,
+		"Runtime": false,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
@@ -54,15 +55,7 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "城管问题(time)",
-					"pathName": "pages/zhcg/cgwt/cgwt",
-					"query": "",
-					"scene": null
-				}
-			]
+			"list": []
 		}
 	}
 }

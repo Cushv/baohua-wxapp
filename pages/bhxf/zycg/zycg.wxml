@@ -1,6 +1,6 @@
 <view class="list-section">
-  <block wx:for="{{list}}" wx:key="{{item.id}}">
-    <navigator class="list-item" url="../cgxq/cgxq?id={{item.id}}">
+  <block wx:for="{{list}}" wx:key="id">
+    <navigator class="list-item" url="../cgxq/cgxq?id=id">
       <view class="item-row">
         <view class="row-name">活动名称：</view>
         <view class="row-value">{{item.hdmc}}</view>

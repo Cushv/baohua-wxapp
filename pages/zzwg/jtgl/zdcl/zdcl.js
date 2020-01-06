@@ -1,66 +1,38 @@
-// pages/zzwl/jtgl/zdcl/zdcl.js
+const app = getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    currentTab: 0,
+    list:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: app.globalData.domain + 'api/key/getVehiclesInfo?page=0&pageSize=100',
+      method: 'post',
+      success: res => {
+        console.log("车辆数据")
+        console.log(res.data.data.vos)
+        this.setData({
+          list: this.list = res.data.data.vos
+        })
+        fail: res => {
+          console.log(res)
+        }
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //根据id获取项目详情
+  zdgcxq(){
+    
+    wx.navigateTo({
+      url: '../zdgc/zdgc',
+    })
+    console.log('一次点击事件！！！')
   }
 })

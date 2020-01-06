@@ -11,7 +11,7 @@
         </view>
       </view>
    </navigator>    
-
+  <navigator class="list-item" url="../fcxq/fcxq"> 
       <view class="message-item" bindtap="activityDetail">
         <image class="message-left" src="{{b3}}" />
         <view class="message-right">
@@ -22,8 +22,8 @@
           </view>
         </view>
       </view>
-
-
+  </navigator>  
+  <navigator class="list-item" url="../fcxq/fcxq"> 
       <view class="message-item" bindtap="activityDetail">
         <image class="message-left" src="{{c3}}" />
         <view class="message-right">
@@ -34,8 +34,8 @@
           </view>
         </view>
       </view>
-
-
+  </navigator>  
+  <navigator class="list-item" url="../fcxq/fcxq"> 
       <view class="message-item" bindtap="activityDetail">
         <image class="message-left" src="{{d3}}" />
         <view class="message-right">
@@ -46,5 +46,5 @@
           </view>
         </view>
       </view>
-
+  </navigator>  
 </scroll-view>

@@ -1,5 +1,5 @@
 
-           <view class="list-item" data-id="{{item.id}}" bindtap="zdgcxq">
+           <view class="list-item" data-id="id" bindtap="zdgcxq">
 
               <view class="item-row">
                 <view class="row-value"><text class="title" space="nbsp">项目名称 ： </text>{{list.keyproProName}}</view>

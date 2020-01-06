@@ -22,6 +22,7 @@ Page({
         start: 0
       },
       success: res => {
+        console.log("1111111111111111111111")
         console.log(res.data)
         let newsInfListTmp = res.data.responseData //将long类型的日期类型转成日期字符串
         let newsInfList = newsInfListTmp.map((value) => {
