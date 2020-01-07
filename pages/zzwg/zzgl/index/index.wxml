@@ -16,24 +16,29 @@
           <block wx:for="{{list}}" wx:key="id">
             <navigator class="list-item" url="../cjxq/cjxq?id=id"> 
               <view class="list-item" data-id="id" bindtap="activityDetail">
-                <view class="item-row">
-                  <view class="row-name">{{item.people}}</view>
+               <view class="item-row">
+                   <view class="row-name">企业名称：</view>
+                   <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
+                
                 <view class="item-row">
-                  <!-- <view class="row-name">上报时间</view> -->
-                    <view class="row-value"><text class="title" space="nbsp">确立问题时间 ： </text>{{item.createTime}}</view>
+                   <view class="row-name">企业类型：</view>
+                   <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
+
                 <view class="item-row">
-                  <!-- <view class="row-name">问题来源</view> -->
-                  <view class="row-value"><text class="title" space="nbsp">上报地址 ： </text>{{item.address}}</view>
+                   <view class="row-name"><image class="row-icon" src="/icons/zzwg/name.png" />法人：</view>
+                   <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
+
                 <view class="item-row">
-                  <!-- <view class="row-name">所属大类</view> -->
-                 <view class="row-value"><text class="title" space="nbsp">企业名称 ： </text>{{item.name}}</view>
+                   <view class="row-name"><image class="row-icon" src="/icons/zzwg/name.png" />联系方式：</view>
+                   <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
+
                 <view class="item-row">
-                  <!-- <view class="row-name">问题描述</view> -->
-                    <view class="row-value"><text class="title" space="nbsp">隐患描述 ： </text>{{item.remarks}}</view>
+                   <view class="row-name"><image class="row-icon" src="/icons/zzwg/name.png" />办公地址：</view>
+                   <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
                 <view class="container"> <!-- 分割线 --> <view class="divLine"></view></view>
                </view>
@@ -55,31 +60,26 @@
             <view class="list-item" data-id="id" bindtap="activityDetail">
                
                 <view class="item-row">
-
                    <view class="row-name">企业名称：</view>
                    <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
                 
                 <view class="item-row">
-    
                    <view class="row-name">企业类型：</view>
                    <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
 
                 <view class="item-row">
-              
                    <view class="row-name"><image class="row-icon" src="/icons/zzwg/name.png" />法人：</view>
                    <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
 
                 <view class="item-row">
-
                    <view class="row-name"><image class="row-icon" src="/icons/zzwg/name.png" />联系方式：</view>
                    <view class="row-value">{{item.keyDriverName}}</view>
                 </view>
 
                 <view class="item-row">
-                   
                    <view class="row-name"><image class="row-icon" src="/icons/zzwg/name.png" />办公地址：</view>
                    <view class="row-value">{{item.keyDriverName}}</view>
                 </view>

@@ -60,6 +60,13 @@
 					"id": -1,
 					"name": "组织管理",
 					"pathName": "pages/zzwg/zzgl/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "问题",
+					"pathName": "pages/zzwg/wtsb/index/index",
 					"scene": null
 				}
 			]
