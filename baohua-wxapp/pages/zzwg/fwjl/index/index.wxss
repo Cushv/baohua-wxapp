@@ -1,7 +1,0 @@
-.add-icon {
-  position: fixed;
-  height: 100rpx;
-  width: 100rpx;
-  right: 100rpx;
-  bottom: 150rpx;
-}
