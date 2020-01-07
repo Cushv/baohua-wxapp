@@ -55,7 +55,14 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": -1,
+					"name": "组织管理",
+					"pathName": "pages/zzwg/zzgl/index/index",
+					"scene": null
+				}
+			]
 		}
 	}
 }
