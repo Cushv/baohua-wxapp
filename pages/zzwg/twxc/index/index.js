@@ -86,6 +86,7 @@ Page({
       return true
     }
   },
+  
   //返回两个经纬度点的距离(m)
   getDistance(oldLatitude, oldLongitude, newLatitude, newLongitude) {
     var radLat1 = oldLatitude * Math.PI / 180.0;
